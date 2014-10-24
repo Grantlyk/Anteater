@@ -26,12 +26,12 @@
 			<h1>Squash those Bugs! <span class="label label-info">{{ bugs.length }}</span></h1>
 		</div>
 
-		<div id="todo-list" class="row">
+		<div id="bug-list" class="row">
 			<div class="col-sm-4 col-sm-offset-4">
 
 				<div class="checkbox" ng-repeat="bug in bugs">
 					<label>
-						<input type="checkbox" ng-click="deleteBug(bug._id)"> {{ bug.desc }}
+						<input type="checkbox" ng-click="deleteBug(bug._id)">{{ bug._id}} {{ bug.desc }}
 					</label>
 				</div>
 
