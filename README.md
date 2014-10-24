@@ -21,11 +21,13 @@ tl;dr - Node gives us the API. Angular gives us the frontend and accesses the AP
 6. You need to create a [Modulus](https://modulus.io/) account to use the MongoDB enviroment.
 7. Open the database.js file in your favourite text editor and add the details you got when you created a Modulus Database information: 
 
-``module.exports = {
+```javascript
+module.exports = {
 
   // the database url to connect
   url : 'mongodb://YourUsername:YourPassword@proximus.modulusmongo.net:YourID'
-}``
+}
+```
 
 8. Start up the server `node server.js`
 9. View in your browser at `http://localhost:8080`
