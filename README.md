@@ -13,7 +13,10 @@ tl;dr - Node gives us the API. Angular gives us the frontend and accesses the AP
 
 ## Installation
 
-Coming soon.
+1. Run git clone `git:://github.com/Grantlyk/Anteater.git`
+2. Install the application `npm install`
+3. Start up the server `node server.js`
+4. View in your browser at `http://localhost:8080`
 
 ## Contributors
 
