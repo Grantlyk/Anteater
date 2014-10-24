@@ -52,4 +52,4 @@ node_modules
 ehthumbs.db
 Thumbs.db
 
-/config/database.js
+database.js
