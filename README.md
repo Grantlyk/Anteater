@@ -32,6 +32,5 @@ module.exports = {
 
 ## Contributors
 
-Grantlyk
-
-## More coming soon
+How can you contribute?
+Fork the repo and see where your dreams take you!
