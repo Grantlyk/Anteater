@@ -1,4 +1,4 @@
-var scotchTodo = angular.module('scotchTodo', []);
+var Anteater = angular.module('Anteater', []);
 
 function mainController($scope, $http) {
 	$scope.formData = {};
