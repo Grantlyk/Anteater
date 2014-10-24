@@ -20,7 +20,6 @@ module.exports = function(app) {
 		bug.create({
 			desc : req.body.text,
 			fixed : false
-			issueNumb : 
 		}, function(err, bugs) {
 			if (err)
 				res.send(err);
