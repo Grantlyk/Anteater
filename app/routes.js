@@ -20,6 +20,7 @@ module.exports = function(app) {
 		bug.create({
 			desc : req.body.text,
 			fixed : false
+			issueNumb : 
 		}, function(err, bugs) {
 			if (err)
 				res.send(err);
@@ -38,7 +39,7 @@ module.exports = function(app) {
 	app.delete('/api/bugs/:bug_id', function(req, res) {
 		bug.remove({
 			_id : req.params.bug_id
-		}, function(err, todo) {
+		}, function(err, bug) {
 			if (err)
 				res.send(err);
 
