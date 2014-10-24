@@ -1,4 +1,4 @@
- var bug = require('./models/bug');
+var bug = require('./models/bug');
 
 module.exports = function(app) {
 
