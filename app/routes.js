@@ -38,16 +38,19 @@ module.exports = function(app) {
 	app.delete('/api/bugs/:bug_id', function(req, res) {
 		bug.remove({
 			_id : req.params.bug_id
-		}, function(err, bug) {
+		}, function(err, bugs) {
 			if (err)
 				res.send(err);
 
 			bug.find(function(err, bugs) {
+				
 				if (err)
 					res.send(err)
+				
 				res.json(bugs);
 			});
 		});
+
 	});
 
 	// application -------------------------------------------------------------
