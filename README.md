@@ -1,7 +1,5 @@
 # Anteater
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Downloads][downloads-image]][npm-url]
-
 A fully functional piece of bug tracking software written in Javascript and using Node, Angular and MongoDB. 
 Node and Express come together to make an API back end that interacts with the MongoDB Database. This leaves Angular
 to steal the show in the front end.
