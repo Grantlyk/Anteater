@@ -30,6 +30,10 @@ module.exports = {
 8. Start up the server `node server.js`
 9. View in your browser at `http://localhost:8080`
 
+## Testing and Recommendation
+
+Please do not hesitate to visit our [bug tracker](https://groups.google.com/forum/#!forum/anteaterbugtracker) and report any errors and suggested features.
+
 ## Contributors
 
 How can you contribute?

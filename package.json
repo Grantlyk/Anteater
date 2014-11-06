@@ -1,9 +1,9 @@
 {
-  "name"         : "node-anteater",
-  "version"      : "0.0.0",
+  "name"         : "anteater",
+  "version"      : "0.2.0",
   "description"  : "Bug tracking software",
   "main"         : "server.js",
-  "author"       : "Grantlyk",
+  "author"       : "Grantlyk <grant_leadbetter@live.co.uk>",
   "dependencies" : {
     "express"    : "~4.7.2",
     "mongoose"   : "~3.6.2",
