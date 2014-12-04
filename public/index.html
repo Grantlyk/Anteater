@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
 
-	<title>Anteater v0.2.0-alpha</title>
+	<title>Anteater v0.2.1-alpha</title>
 
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+	<link rel="stylesheet" href="lib/bootstrap.min.css"><!-- load bootstrap -->
 	<style>
 		html 					{ overflow-y:scroll; }
 		body 					{ padding-top:50px; }
@@ -15,7 +15,8 @@
 		#todo-form 	 			{ margin-bottom:50px; }
 	</style>
 
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="https://code.angularjs.org/1.0.8/angular.min.js"></script><!-- load angular -->
 	<script src="core.js"></script>
 
 </head>
@@ -31,7 +32,7 @@
 
 				<div class="checkbox" ng-repeat="bug in bugs">
 					<label>
-						<input type="checkbox" ng-click="deleteBug(bug._id)">{{ bug._id}} {{ bug.desc }}
+						<input type="checkbox" ng-click="deleteBug(bug._id)"> {{ bug.desc }}
 					</label>
 				</div>
 
