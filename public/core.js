@@ -1,19 +1,19 @@
 var Anteater = angular.module('Anteater', []);
 
-function mainController($scope, $http) {
+Anteater.controller('mainController', ['$scope', '$http', function ($scope, $http) {
 	$scope.formData = {};
 
-	$http.get('/api/bugs')
+	$http.get('api/bugs')
 		.success(function(data) {
 			$scope.bugs = data;
 		})
 		.error(function(data) {
-			console.log('Error: ' + data);
+			console.log('Error: ' + data)
 		});
 
 
 	$scope.createBug = function() {
-		$http.post('/api/bugs', $scope.formData)
+		$http.post('api/bugs', $scope.formData)
 			.success(function(data) {
 				$scope.formData = {}; 
 				$scope.bugs = data;
@@ -24,9 +24,8 @@ function mainController($scope, $http) {
 			});
 	};
 
-	
 	$scope.deleteBug = function(id) {
-		$http.delete('/api/bugs/' + id)
+		$http.delete('api/bugs/' + id)
 			.success(function(data) {
 				$scope.bugs = data;
 			})
@@ -34,5 +33,5 @@ function mainController($scope, $http) {
 				console.log('Error: ' + data);
 			});
 	};
+}]);
 
-}
